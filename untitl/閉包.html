@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  function a() {
+    var b=123
+    function m() {
+      return b
+    }
+    return m()
+  }
+  var foo=(function () {
+
+       var name=3333
+      return{
+
+         getName:function () {
+             return name
+         },
+         setName:function (aa) {
+              name=aa
+         }
+      }
+  })
+
+  foo().setName('國雄')
+  console.log(foo().getName())
+</script>
+</html>

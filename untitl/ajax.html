@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script src='./jquery.js'></script>
+<script>
+ // 0eec80ada27fd15c49f0c186bdaf87af
+  $.ajax({
+    url:'http://www.haoservice.com/docs/64/joke_img',
+    type:'get',
+    dataType:'JSONP',
+    jsonp:'callback',
+    data:{
+      key:'0eec80ada27fd15c49f0c186bdaf87af',
+      pagesize:2,
+      page:1
+    },
+    success:function (data) {
+      var result = JSON.stringify(data); //json对象转成字符串
+      console.log(222)
+    },
+    falure:function () {
+      alert(122)
+    }
+  })
+</script>
+</html>
